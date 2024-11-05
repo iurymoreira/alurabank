@@ -1,7 +1,8 @@
-import { Imprimivel } from "./index";
-import { Igualavel } from "./index";
+// import { Imprimivel } from "./index";
+// import { Igualavel } from "./index";
+import { MeuObjeto } from "./index";
 
-export class Negociacao implements Imprimivel, Igualavel<Negociacao> {
+export class Negociacao implements MeuObjeto<Negociacao> { //substituindo Imprimivel, Igualavel por MeuObjeto
     
     constructor(readonly data: Date, readonly quantidade: number, readonly valor: number) {
 
